@@ -12,18 +12,28 @@
     </style>
   </head>
   <body>
+    
+    <!-- Tutaj przykład pod Onet -->
+
     <section id="onet">
       <h4 class="title">ONET</h4>
 
       <div class="banner">
-        <!-- Linkiem oplatamy banner -->
-        <a href="" id="itemClick" target="_blank">
-          <!-- Tutaj właściwy banner -->
-          <img class="banner__image" src="photo.jpg" alt="" />
-        </a>
+          
+          <div class="gwd-page-content gwd-page-size">
+            
+            <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+            <a href="" id="itemClick" target="_blank">
+              <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+              <img class="banner__image" src="photo.jpg" alt="" />
+            </a>
+            <!-- -->
+            
+          </div>
+       
       </div>
 
-      <!-- To wklejamy przed znacznikiem /body -->
+      <!-- 2. To wklejamy przed znacznikiem /body -->
       <script type="text/javascript">
         var params = {};
         window.location.href.replace(/[?#&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
@@ -32,24 +42,36 @@
         var clickTag = params['click'] === undefined ? 'http://onet.pl' : params['click'];
         document.getElementById('itemClick').href = clickTag;
       </script>
+      <!-- -->
+      
     </section>
+    
+    <!-- Tutaj przykład pod WP -->
 
     <section id="wp">
       <h4 class="title">WP</h4>
 
-      <!-- To wklejamy przed znacznikiem /head -->
+      <!-- 1. To wklejamy przed znacznikiem /head -->
       <script type="text/javascript">
         var clickTag = 'https://ccc.eu';
       </script>
+      <!-- -->
 
-      <!-- Tutaj właściwy banner -->
-      <img class="banner__image" src="photo.jpg" alt="" />
+      
+      <div class="gwd-page-content gwd-page-size">
+        
+        <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+        <img class="banner__image" src="photo.jpg" alt="" />
 
-      <!-- To wklejamy pod bannerem -->
-      <div
-        style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer"
-        onclick="window.open(window.clickTag, '_blank')"
-      ></div>
+        <!-- 2. To wklejamy pod contentem bannera -->
+        <div
+          style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer"
+          onclick="window.open(window.clickTag, '_blank')"
+        ></div>
+        <!-- -->
+        
+      </div>
+      
     </section>
   </body>
 </html>
