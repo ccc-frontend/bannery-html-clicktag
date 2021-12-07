@@ -2,21 +2,15 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CCC clicktag</title>
-    <style>
-      .title {
-        font-family: sans-serif;
-      }
-    </style>
   </head>
   <body>
+    
     
     <!-- Tutaj przykład pod Onet -->
 
     <section id="onet">
-      <h4 class="title">ONET</h4>
 
       <div class="banner">
           
@@ -26,6 +20,7 @@
             <a href="" id="itemClick" target="_blank">
               <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
               <img class="banner__image" src="photo.jpg" alt="" />
+              <!-- -->
             </a>
             <!-- -->
             
@@ -46,10 +41,10 @@
       
     </section>
     
+    
     <!-- Tutaj przykład pod WP -->
 
     <section id="wp">
-      <h4 class="title">WP</h4>
 
       <!-- 1. To wklejamy przed znacznikiem /head -->
       <script type="text/javascript">
@@ -62,6 +57,7 @@
         
         <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
         <img class="banner__image" src="photo.jpg" alt="" />
+        <!-- -->
 
         <!-- 2. To wklejamy pod contentem bannera -->
         <div
@@ -71,6 +67,43 @@
         <!-- -->
         
       </div>
+      
+    </section>
+    
+    
+    <!-- Tutaj przykład pod Filmweb -->
+    
+    <!-- 1. To wklejamy przed znacznikiem /head -->
+    <script src="//ns.sascdn.com/diff/templates/js/banner/sas-clicktag-3.1.js"></script>
+    <!-- -->
+
+    <section id="filmweb">
+
+      <div class="banner">
+          
+          <div class="gwd-page-content gwd-page-size">
+            
+            <!-- 2. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+            <a id="clickUrl" href="#">
+              <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+              <img class="banner__image" src="photo.jpg" alt="" />
+              <!-- -->
+            </a>
+            <!-- -->
+            
+          </div>
+       
+      </div>
+
+      <!-- 3. To wklejamy przed znacznikiem /body -->
+      <script>
+        var clickTag = "";
+        var clickArea1 = document.getElementById("clickUrl");
+        clickArea1.onclick = function(){
+          window.open(clickTag, "_blank");
+        }
+      </script>
+      <!-- -->
       
     </section>
   </body>
