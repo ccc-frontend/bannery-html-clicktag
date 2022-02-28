@@ -6,26 +6,21 @@
     <title>CCC clicktag</title>
   </head>
   <body>
-    
-    
+    <!---->
     <!-- Tutaj przykład pod Onet -->
+    <!---->
 
     <section id="onet">
-
       <div class="banner">
-          
-          <div class="gwd-page-content gwd-page-size">
-            
-            <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
-            <a href="" id="itemClick" target="_blank">
-              <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
-              <img class="banner__image" src="photo.jpg" alt="" />
-              <!-- -->
-            </a>
+        <div class="gwd-page-content gwd-page-size">
+          <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+          <a href="" id="itemClick" target="_blank">
+            <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+            <img class="banner__image" src="photo.jpg" alt="" />
             <!-- -->
-            
-          </div>
-       
+          </a>
+          <!-- -->
+        </div>
       </div>
 
       <!-- 2. To wklejamy przed znacznikiem /body -->
@@ -38,23 +33,20 @@
         document.getElementById('itemClick').href = clickTag;
       </script>
       <!-- -->
-      
     </section>
-    
-    
+
+    <!---->
     <!-- Tutaj przykład pod WP -->
+    <!---->
 
     <section id="wp">
-
       <!-- 1. To wklejamy przed znacznikiem /head -->
       <script type="text/javascript">
         var clickTag = 'https://ccc.eu';
       </script>
       <!-- -->
 
-      
       <div class="gwd-page-content gwd-page-size">
-        
         <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
         <img class="banner__image" src="photo.jpg" alt="" />
         <!-- -->
@@ -65,67 +57,56 @@
           onclick="window.open(window.clickTag, '_blank')"
         ></div>
         <!-- -->
-        
       </div>
-      
     </section>
-    
-    
+
+    <!---->
     <!-- Tutaj przykład pod Filmweb -->
-    
+    <!---->
+
     <!-- 1. To wklejamy przed znacznikiem /head -->
     <script src="//ns.sascdn.com/diff/templates/js/banner/sas-clicktag-3.1.js"></script>
     <!-- -->
 
     <section id="filmweb">
-
       <div class="banner">
-          
-          <div class="gwd-page-content gwd-page-size">
-            
-            <!-- 2. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
-            <a id="clickUrl" href="#">
-              <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
-              <img class="banner__image" src="photo.jpg" alt="" />
-              <!-- -->
-            </a>
+        <div class="gwd-page-content gwd-page-size">
+          <!-- 2. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+          <a id="clickUrl" href="#">
+            <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+            <img class="banner__image" src="photo.jpg" alt="" />
             <!-- -->
-            
-          </div>
-       
+          </a>
+          <!-- -->
+        </div>
       </div>
 
       <!-- 3. To wklejamy przed znacznikiem /body -->
       <script>
-        var clickTag = "";
-        var clickArea1 = document.getElementById("clickUrl");
-        clickArea1.onclick = function(){
-          window.open(clickTag, "_blank");
-        }
+        var clickTag = '';
+        var clickArea1 = document.getElementById('clickUrl');
+        clickArea1.onclick = function () {
+          window.open(clickTag, '_blank');
+        };
       </script>
       <!-- -->
-      
     </section>
-    
-    
-     <!-- Tutaj przykład pod Edipresse -->
+
+    <!---->
+    <!-- Tutaj przykład pod Edipresse -->
+    <!---->
 
     <section id="edipresse">
-
       <div class="banner">
-          
-          <div class="gwd-page-content gwd-page-size">
-            
-            <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
-            <a href=# id="creativelink" target="_blank">
-              <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
-              <img class="banner__image" src="photo.jpg" alt="" />
-              <!-- -->
-            </a>
+        <div class="gwd-page-content gwd-page-size">
+          <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+          <a href="#" id="creativelink" target="_blank">
+            <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+            <img class="banner__image" src="photo.jpg" alt="" />
             <!-- -->
-            
-          </div>
-       
+          </a>
+          <!-- -->
+        </div>
       </div>
 
       <!-- 2. To wklejamy przed znacznikiem /body -->
@@ -140,10 +121,6 @@
         document.getElementById('creativelink').href = params.click;
       </script>
       <!-- -->
-      
     </section>
   </body>
 </html>
-
-
-
