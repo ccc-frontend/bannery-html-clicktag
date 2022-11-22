@@ -122,5 +122,35 @@
       </script>
       <!-- -->
     </section>
+
+    <!---->
+    <!-- Tutaj przykład pod Agora -->
+    <!---->
+
+    <section id="agora">
+      <div class="banner">
+        <div class="gwd-page-content gwd-page-size">
+          <!-- 1. Linkiem oplatamy banner pod <div class="gwd-page-content gwd-page-size"> -->
+          <a id="creativelink" target="_blank">
+            <!-- Tutaj content bannera wygenerowany przez Google Web Designer (tego nie wklejamy) -->
+            <img class="banner__image" src="photo.jpg" alt="" />
+            <!-- -->
+          </a>
+          <!-- -->
+        </div>
+      </div>
+
+      <!-- 2. To wklejamy przed znacznikiem /body -->
+      <script type="text/javascript">
+        var parsed = (document.location.href.split('#')[1] || '').split('&');
+        var params = parsed.reduce(function (params, param) {
+          var param = param.split('=');
+          params[param[0]] = decodeURIComponent(param.slice(1).join('='));
+          return params;
+        }, {});
+        document.getElementById('creativelink').href = params.clickTag;
+      </script>
+      <!-- -->
+    </section>
   </body>
 </html>
